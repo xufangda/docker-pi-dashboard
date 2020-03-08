@@ -10,7 +10,7 @@ docker build -t ecat/docker-pi-dashboard .
 ## run
 It's very simple!
 ```
-docker run -d --name docker-pi-dashboard -e 'LISTEN=1024' --net=host ecat/docker-pi-dashboard
+docker run -d --name docker-pi-dashboard -e 'LISTEN=1024' --restart=always --net=host ecat/docker-pi-dashboard
 ```
 
 - The environment variable **LISTEN** is optional which default is **80**.
